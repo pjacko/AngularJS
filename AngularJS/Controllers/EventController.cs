@@ -12,5 +12,10 @@ namespace AngularJS.Controllers
         {
             return View();
         }
-	}
+
+        public ActionResult Create()
+        {
+            return View();
+        }
+    }
 }

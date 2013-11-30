@@ -1,0 +1,49 @@
+﻿@using System.Web.Optimization
+@{
+    ViewBag.Title = "title";
+}
+
+<div ng-controller="EditEventController">
+    <div class="container">
+        <h1>New Event</h1>
+        <hr />
+        <form name="newEventForm">
+            <fieldset>
+                <div>
+                    <label for="eventName">Event Name:</label>
+                    <input id="eventName" type="text" required ng-model="event.name" placeholder="Name of your event..." />
+                </div>
+                <div>
+                    <label for="eventDate">Event Date:</label>
+                    <input id="eventDate" type="text" required ng-pattern="/\d\d/\d\d/\d\d\d\d/" ng-model="event.date" placeholder="format (mm/dd/yyyy)..." />
+                </div>
+                <div>
+                    <label for="eventTime">Event Time:</label>
+                    <input id="eventTime" type="text" ng-model="event.time" placeholder="start and end time..." />
+                </div>
+                <div>
+                    <label for="eventLocation">Event Location:</label>
+                    <input id="eventLocation" type="text" ng-model="event.location.address" placeholder="Address of event..." />
+                </div>
+                <script></script>
+                <div>{{event.name}}</div>
+                <div>
+                    <label for="eventImageUrl">Image:</label>
+                    <input id="eventImageUrl" type="url" ng-model="event.imageUrl" class="input-xlarge" placeholder="Url of image..." />
+                </div>
+            </fieldset>
+
+            <img ng-src="{{event.imageUrl}}" src="" />
+            <br />
+            <br />
+
+            <button type="submit" ng-disabled="newEventForm.$invalid" ng-click="saveEvent(event, newEventForm)" class="btn btn-primary">Save</button>
+            <button type="button" ng-click="cancelEdit()" class="btn btn-defualt">Cancel</button>
+        </form>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/angular")
+<script src="~/Scripts/app/controllers/EventController.js"></script>
+<script src="~/Scripts/app/controllers/EditEventController.js"></script>
+<script src="~/Scripts/app/filters.js"></script>

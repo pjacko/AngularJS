@@ -18,11 +18,21 @@ namespace AngularJS.App_Start
                         "~/Scripts/modernizr-*"));
 
             // Bootstrap
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include("~/Scripts/bootstrap.min.js"));
+            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include("~/Scripts/bootstrap.js"));
+
+            // Angular
+            bundles.Add(new ScriptBundle("~/bundles/angular")
+                .Include("~/Scripts/angular.js")
+                .Include("~/Scripts/app/app.js"));
 
             bundles.Add(new StyleBundle("~/Content/bootstrap")
-                        .Include("~/Content/bootstrap.min.css")
-                        .Include("~/Content/bootstrap-theme.min.css"));
+                .Include("~/Content/bootstrap.min.css")
+                .Include("~/Content/bootstrap-theme.min.css"));
+
+            bundles.Add(new LessBundle("~/Content/css")
+                .Include("~/Content/app.css"));
+
+            
 
 #if DEBUG
 
