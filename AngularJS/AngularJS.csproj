@@ -145,9 +145,12 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\app\app.js" />
     <Content Include="Scripts\app\controllers\EditEventController.js" />
+    <Content Include="Scripts\app\controllers\EditProfileController.js" />
     <Content Include="Scripts\app\controllers\EventController.js" />
     <Content Include="Scripts\app\directives.js" />
     <Content Include="Scripts\app\filters.js" />
+    <Content Include="Scripts\app\services\EventData.js" />
+    <Content Include="Scripts\app\services\GravatarUrlBuilder.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
@@ -426,6 +429,7 @@
     <Compile Include="Infrastructure\DotLess\ImportedFilePathResolver.cs" />
     <Compile Include="Infrastructure\DotLess\LessBundle.cs" />
     <Compile Include="Infrastructure\DotLess\LessTransform.cs" />
+    <Compile Include="Models\Event.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -441,6 +445,7 @@
     <Content Include="Scripts\angular-animate.min.js.map" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Views\Event\Create.cshtml" />
+    <Content Include="Views\Event\Profile.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -450,7 +455,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -57,4 +57,3 @@ C:\Users\pete\Documents\GitHub\MyGithub\AngularJS\AngularJS\bin\System.Web.WebPa
 C:\Users\pete\Documents\GitHub\MyGithub\AngularJS\AngularJS\bin\System.Web.WebPages.Razor.xml
 C:\Users\pete\Documents\GitHub\MyGithub\AngularJS\AngularJS\obj\Debug\AngularJS.dll
 C:\Users\pete\Documents\GitHub\MyGithub\AngularJS\AngularJS\obj\Debug\AngularJS.pdb
-C:\Users\pete\Documents\GitHub\MyGithub\AngularJS\AngularJS\bin\AngularJS.dll.config

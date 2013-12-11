@@ -61,7 +61,7 @@
                     <span>Duration: {{session.duration | durations }}</span><br />
                     <span>Level: {{session.level}}</span>
 
-                    <p>{{session.abstract}}</p>
+                    <p>{{session.description}}</p>
                 </div>
             </div>
         </li>
@@ -71,4 +71,5 @@
 
 @Scripts.Render("~/bundles/angular")
 <script src="~/Scripts/app/controllers/EventController.js"></script>
+<script src="~/Scripts/app/services/EventData.js"></script>
 <script src="~/Scripts/app/filters.js"></script>
